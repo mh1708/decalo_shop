@@ -61,8 +61,14 @@ button:focus {
 }
 
 img {
+    width: 100%;
     max-width: 100%;
     height: 100%;
+}
+
+button {
+    border: none;
+    outline: none;
 }
 
 .full-section {
@@ -287,6 +293,16 @@ button.owl-next span {
 .btn.btn__play {
     background: none;
     border: none;
+    cursor: pointer;
+}
+
+.btn.btn__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
 }
 
 .heading {
@@ -298,4 +314,8 @@ button.owl-next span {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+}
+
+.order-first {
+    order: -1;
 }

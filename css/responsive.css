@@ -101,9 +101,6 @@
             flex: 0 0 100%;
             margin-top: 0px;
         }
-        .order-1 {
-            order: -1;
-        }
         .banner__images {
             height: 320px;
         }
@@ -118,6 +115,9 @@
         }
         .service__thumb {
             margin-bottom: 30px;
+        }
+        .order-1 {
+            order: -1;
         }
     }
     /*Ipad dọc(768 x 1024)*/
