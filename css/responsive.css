@@ -168,6 +168,9 @@
         .header__select {
             position: static;
         }
+        .colection_thumb {
+            height: 300px;
+        }
     }
     /*Tablet nhỏ(480 x 640)*/
     
@@ -201,9 +204,6 @@
         }
         .colection {
             height: 100%;
-        }
-        .colection_thumb {
-            height: 300px;
         }
         .colection__text .colection__heading {
             font-weight: 600;
