@@ -38,6 +38,7 @@
         z-index: 99;
         width: 100%;
         opacity: 0;
+        left: 10px;
         visibility: hidden;
         transition: all 0.5s ease-in-out;
     }
@@ -246,6 +247,9 @@
         max-width: 100%;
         flex: 0 0 100%;
     }
+    .faq__acorrdion {
+        margin: 0 15px;
+    }
 }
 
 
@@ -400,6 +404,15 @@
     .about__description--bottom {
         padding-bottom: 0;
     }
+    .news__text,
+    .new__image {
+        width: 100%;
+    }
+    .detail__item,
+    .detail__cards {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 540px) {
@@ -408,7 +421,7 @@
     }
     .faq__item {
         width: 100%;
-        padding: 0;
+        padding: 0 15px;
     }
     .faq__contact {
         padding: 0;
@@ -517,6 +530,9 @@
     }
     .colection__text--w100 {
         width: 100%;
+    }
+    .mt-sm-40 {
+        margin-top: 40px;
     }
     .pd-pl-sm-15 {
         padding-left: 15px;

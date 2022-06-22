@@ -7,6 +7,8 @@
 .header__container {
     max-width: 1300px;
     margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header__top {
@@ -1471,7 +1473,7 @@
 }
 
 .news__text {
-    width: 500px;
+    width: 50%;
     padding: 20px;
 }
 
@@ -1508,7 +1510,8 @@
 }
 
 .new__image {
-    width: 220px;
+    width: 50%;
+    padding: 15px;
 }
 
 #OUR_SERVICE .service__thumb {
