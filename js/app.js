@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
+    $('.owl-one').owlCarousel({
         loop: true,
 
         nav: true,
@@ -21,6 +21,25 @@ $(document).ready(function() {
             },
             1000: {
                 items: 1
+            }
+        }
+    });
+    $('.owl-two').owlCarousel({
+        margin: 20,
+        loop: true,
+        nav: true,
+        navText: ["<img src='images/Prev-arrow-black.svg'>",
+            "<img src='images/Next-arrow-black.svg'>"
+        ],
+        responsive: {
+            0: {
+                items: 4
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 4
             }
         }
     })
