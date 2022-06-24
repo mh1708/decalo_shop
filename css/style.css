@@ -404,7 +404,7 @@
     padding-top: 70px;
 }
 
-.footer__list {
+.footer__detail {
     padding: 0 10px;
 }
 
@@ -437,7 +437,7 @@
     display: block;
 }
 
-.footer__list .footer__heading {
+.footer__heading {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -1191,10 +1191,6 @@
 
 .tab__product .faq__links.active {
     font-weight: 600;
-}
-
-.product__catalog {
-    padding: 0 10px;
 }
 
 .product__object {

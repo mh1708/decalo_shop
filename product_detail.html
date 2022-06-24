@@ -23,9 +23,9 @@
                 <div class="header__top">
                     <div class="header__container">
                         <span class="header__title spacing_2px">FREE SHIPPING IN ITALY</span>
-                        <form action="" class="header__select">
+                        <form class="header__select">
                             <div class="header__form">
-                                <select name="" id="" class=" header__input">
+                                <select class="header__input">
                                     <option class="header__option" >Italian</option>
                                     <option class="header__option" >English</option>
                                     <option class="header__option" >Laos</option>
@@ -255,9 +255,9 @@
                                 </div>
                                 <div class="product__add d-flex  mt-40">
                                     <form class="product__amount">
-                                        <div class="value__button minus" id="decrease" value="Decrease Value">-</div>
+                                        <div class="value__button minus" id="decrease">-</div>
                                         <input type="number" id="number" value="0" class="number__item" />
-                                        <div class="value__button plush" id="increase" value="Increase Value">+</div>
+                                        <div class="value__button plush" id="increase">+</div>
                                     </form>
                                     <div class="product__control d-flex justify-content-between">
                                         <button class="btn btn__add btn--bg-white spacing_2px">ADD TO CART</button>
@@ -300,21 +300,23 @@
                 <div class="wrapper__product--tab mt-80">
                     <div id="PRODUCT_INFORMATION" class="faq__content  active">
                         <div class="product__packet d-flex">
-                            <ul class="product__catalog col-7">
+                            <div class="product_checklist col-7">
                                 <h5 class="heading product__headline">PRODUCT INFO</h5>
-                                <li class="product__object mt-35">
-                                    <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
-                                </li>
-                                <li class="product__object">
-                                    <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
-                                </li>
-                                <li class="product__object">
-                                    <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
-                                </li>
-                                <li class="product__object">
-                                    <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
-                                </li>
-                            </ul>
+                                <ul class="product__catalog">
+                                    <li class="product__object mt-35">
+                                        <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
+                                    </li>
+                                    <li class="product__object">
+                                        <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
+                                    </li>
+                                    <li class="product__object">
+                                        <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
+                                    </li>
+                                    <li class="product__object">
+                                        <a href="" class="product__link">Sed ut perspiciatis unde omnis iste natus error sit</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <div class="image__detail col-5">
                                 <div class="image__item">
                                     <img src="images/product.jpg" alt="">
@@ -399,14 +401,14 @@
                     </div>
                     <div id="PAYMENT_METHOD" class="faq__content">
                         <div class="container">
-                            <form action="" class="form__payment">
+                            <form class="form__payment">
                                 <div class="row d-flex align-item-center justify-content-between">
                                     <div class="col-6 form__group">
                                         <label class="form__heading spacing_2px" for="title">Full Name</label>
                                         <input class="form__control" type="text" id="full__name" name="firstname" placeholder="John M. Doe">
                                     </div>
                                     <div class="col-6 form__group m-0">
-                                        <label for="fname" class="form__heading spacing_2px">Accepted Cards</label>
+                                        <label class="form__heading spacing_2px">Accepted Cards</label>
                                         <ul class="cards__icon d-flex align-item-center justify-content-between">
                                             <li class="cards__item">
                                                 <a href="#" class="cards__link">
@@ -468,13 +470,13 @@
                                     </div>
                                 </div>
                                 <div class="row d-flex align-item-center justify-content-between mt-40">
-                                    <div class="col-6 detail__cards">
+                                    <div class="col-6 detail__cards ">
                                         <div class="row  d-flex align-item-center justify-content-between">
                                             <div class="col-6 detail__item">
                                                 <label for="state" class="form__heading spacing_2px">State</label>
                                                 <input class="form__control" type="text" id="state" name="state" placeholder="NY">
                                             </div>
-                                            <div class="col-6 detail__item">
+                                            <div class="col-6 detail__item mt-sm-40">
                                                 <label for="zip" class="form__heading spacing_2px">Zip</label>
                                                 <input class="form__control" type="text" id="zip" name="zip" placeholder="10001">
                                             </div>
@@ -482,11 +484,11 @@
                                     </div>
                                     <div class="col-6 detail__cards">
                                         <div class="row  d-flex align-item-center justify-content-between">
-                                            <div class="col-6 detail__item">
+                                            <div class="col-6 detail__item mt-sm-40">
                                                 <label for="expyear" class="form__heading spacing_2px">Exp Year</label>
                                                 <input class="form__control" type="text" id="expyear" name="expyear" placeholder="2018">
                                             </div>
-                                            <div class="col-6 detail__item">
+                                            <div class="col-6 detail__item mt-sm-40">
                                                 <label for="cvv" class="form__heading spacing_2px">CVV</label>
                                                 <input class="form__control" type="text" id="cvv" name="cvv" placeholder="352">
                                             </div>
@@ -655,57 +657,65 @@
                     <img src="images/logo_white.svg" alt="" class="footer__logo--item">
                 </div>
                 <div class="footer__nav d-flex  justify-content-between">
-                    <ul class="footer__list">
-                        <h3 class="heading footer__heading spacing_2px">CUSTOMER CARE</h3>
-                        <li class="footer__item--child">
-                            <a href="" class="footer__request">Track your order</a>
-                        </li>
-                        <li class="footer__item--child">
-                            <a href="" class="footer__request">Frequent Question</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__list footer__list--info">
-                        <h3 class="heading footer__heading spacing_2px">LEGAL INFORMATION:</h3>
+                    <div class="footer__detail">
+                        <h3 class=" footer__heading spacing_2px">CUSTOMER CARE</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item--child">
+                                <a href="" class="footer__request">Track your order</a>
+                            </li>
+                            <li class="footer__item--child">
+                                <a href="" class="footer__request">Frequent Question</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__detail">
+                        <h3 class=" footer__heading spacing_2px">LEGAL INFORMATION:</h3>
+                        <ul class="footer__list footer__list--info">
 
-                        <li class="footer__item--child">
-                            <p class="footer__request footer__request--info ">Company name: De Carlo Nicholas</p>
-                        </li>
-                        <li class="footer__item--child">
-                            <p class="footer__request footer__request--info ">VAT number: 07020260480</p>
-                        </li>
-                        <li class="footer__item--child">
-                            <p class="footer__request footer__request--info ">REA: FI-674952</p>
-                        </li>
-                        <li class="footer__item--child footer__item--w200">
-                            <p class="footer__request footer__request--info ">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
-                        </li>
+                            <li class="footer__item--child">
+                                <p class="footer__request footer__request--info ">Company name: De Carlo Nicholas</p>
+                            </li>
+                            <li class="footer__item--child">
+                                <p class="footer__request footer__request--info ">VAT number: 07020260480</p>
+                            </li>
+                            <li class="footer__item--child">
+                                <p class="footer__request footer__request--info ">REA: FI-674952</p>
+                            </li>
+                            <li class="footer__item--child footer__item--w200">
+                                <p class="footer__request footer__request--info ">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                            </li>
 
-                    </ul>
-                    <ul class="footer__list">
-                        <h3 class="heading footer__heading spacing_2px">LEGAL TERMS:</h3>
-                        <li class="footer__item--child">
-                            <a href="" class="footer__request">Informazioni legali</a>
-                        </li>
-                        <li class="footer__item--child">
-                            <a href="" class="footer__request footer__item--w200">Condizioni generali di vendita</a>
-                        </li>
-                        <li class="footer__item--child">
-                            <a href="" class="footer__request">Informativa sulla privacy</a>
-                        </li>
-                        <li class="footer__item--child">
-                            <a href="" class="footer__request">Cookie policy</a>
-                        </li>
-                    </ul>
-                    <ul class="footer__list order-1">
-                        <h3 class="heading footer__heading spacing_2px">SUBSCRIBE FOR NEWSLETTER</h3>
-                        <li class="footer__item">
-                            <form action="" class="footer__form">
-                                <input type="text" placeholder="Your Email" class="footer__input">
-                                <a href="" class="footer__button">Subscribe</a>
-                            </form>
-                        </li>
-                        <h3 class="footer__heading heading spacing_2px">SOCIAL</h3>
-                        <li class="footer__item footer__social">
+                        </ul>
+                    </div>
+                    <div class="footer__detail">
+                        <h3 class=" footer__heading spacing_2px">LEGAL TERMS:</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item--child">
+                                <a href="" class="footer__request">Informazioni legali</a>
+                            </li>
+                            <li class="footer__item--child">
+                                <a href="" class="footer__request footer__item--w200">Condizioni generali di vendita</a>
+                            </li>
+                            <li class="footer__item--child">
+                                <a href="" class="footer__request">Informativa sulla privacy</a>
+                            </li>
+                            <li class="footer__item--child">
+                                <a href="" class="footer__request">Cookie policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__detail  order-1">
+                        <h3 class=" footer__heading spacing_2px">SUBSCRIBE FOR NEWSLETTER</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <form class="footer__form">
+                                    <input type="text" placeholder="Your Email" class="footer__input">
+                                    <a href="" class="footer__button">Subscribe</a>
+                                </form>
+                            </li>
+                        </ul>
+                        <div class="footer__social">
+                            <h3 class="footer__heading  spacing_2px">SOCIAL</h3>
                             <ul class="list__social d-flex align-item-center">
                                 <li class="list__social--item">
                                     <a href="" class="list__item--links">
@@ -728,21 +738,26 @@
                                     </a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+
+
+                    </div>
                 </div>
                 <div class="footer__copyright">
                     <p class="footer__copyright--text">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
                 </div>
             </div>
         </div>
+        <!-- end foooter -->
+
 
     </div>
-    </div>
+    <script src="js/video.js"></script>
+    <script src="js/open__box.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/app.js"></script>
 </body>
-<script src="js/video.js"></script>
-<script src="js/open__box.js"></script>
-<script src="js/jquery-3.6.0.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/base.js"></script>
-<script src="js/app.js"></script>
+
+</html>
