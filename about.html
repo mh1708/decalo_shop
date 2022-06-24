@@ -39,24 +39,24 @@
                 <div class="header__bottom">
                     <div class="header__container">
                         <div class="header__nav d-flex align-item-center justify-content-between">
-                            <a href="#" class="header__logo">
+                            <a href="index.html" class="header__logo">
                                 <img class="header--img__logo" src="images/logo_black.svg" alt="">
                             </a>
                             <ul class="header__navbar d-flex">
-                                <li class="header__item active">
+                                <li class="header__item">
                                     <a href="index.html" class="header__link spacing_2px">SHOP</a>
                                     <div class="nav--down">
                                         <img src="images/Arrow-down.svg" alt="" class="nav--down__img">
                                     </div>
                                     <ul class="header__subnav">
-                                        <li class="header__item">
-                                            <a href="" class="header__link spacing_2px">T-Shirt</a>
+                                        <li class="header__subnav--item">
+                                            <a href="" class="header__subnav--link spacing_2px">T-Shirt</a>
                                         </li>
-                                        <li class="header__item">
-                                            <a href="" class="header__link spacing_2px">Hat</a>
+                                        <li class="header__subnav--item">
+                                            <a href="" class="header__subnav--link spacing_2px">Hat</a>
                                         </li>
-                                        <li class="header__item pb-sm-0">
-                                            <a href="" class="header__link spacing_2px">Shorts</a>
+                                        <li class="header__subnav--item">
+                                            <a href="" class="header__subnav--link spacing_2px">Shorts</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -70,15 +70,18 @@
                                     <a href="dealer.html" class="header__link spacing_2px">BECOME A DEALER</a>
                                 </li>
                                 <li class="header__item">
+                                    <a href="FAQ.html" class="header__link spacing_2px">FAQ</a>
+                                </li>
+                                <li class="header__item">
                                     <a href="contact.html" class="header__link spacing_2px">CONTACT</a>
                                 </li>
                             </ul>
                             <ul class="header__operate d-flex">
                                 <li class="header__manupication header__manupication--search">
-                                    <a href="" class="header__links">
+                                    <a class="header__links">
                                         <img src="images/search.svg" alt="" class="header__icon header__icon--search">
                                     </a>
-                                    <div class="search__box">
+                                    <div class="search__box box">
                                         <form method="GET">
                                             <input type="text" placeholder="Search for product..." class="search__text">
                                             <div class="type__select">
@@ -94,12 +97,12 @@
                                         </form>
                                     </div>
                                 </li>
-                                <li class="header__manupication header__favor--hover">
-                                    <a href="" class="header__links">
+                                <li class="header__manupication header__favor--click">
+                                    <a class="header__links">
                                         <img src="images/loves.svg" alt="" class="header__icon">
                                     </a>
-                                    <ul class="header__favor">
-                                        <li class="header__favor--list">
+                                    <ul class="header__favor box">
+                                        <li class="header__favor--list ">
                                             <img src="images/ring.jpg" alt="" class="header__favor--img">
                                             <div class="header__favor--info">
                                                 <div class="header__favor--head d-flex align-item-center justify-content-between">
@@ -154,10 +157,10 @@
                                     </ul>
                                 </li>
                                 <li class="header__manupication header__user--hover">
-                                    <a href="" class="header__links">
+                                    <a class="header__links">
                                         <img src="images/user.svg" alt="" class="header__icon">
                                     </a>
-                                    <ul class="header__user">
+                                    <ul class="header__user box">
                                         <li class="header__user--list">
                                             <a href="" class="header__user--link">My Account</a>
                                         </li>
@@ -195,11 +198,13 @@
         <!-- end banner -->
         <div class="brand">
             <div class="container">
-                <div class="brand__image">
+                <div class="brand__image discover-vid">
                     <img src="images/brand_1.jpg" alt="" class="brand__image--item">
                     <button class="btn btn__play">
                         <img class="btn__images"  src="images/play.svg" alt="">
                     </button>
+                    <video controls class="control-video" src="video/video-ad.mp4"></video>
+
                 </div>
                 <div class="brand__text">
                     <h2 class="heading brand__heading--item spacing_2px">BIRTH OF THE BRAND</h2>
@@ -292,9 +297,7 @@
                 </div>
                 <div class="footer__nav d-flex  justify-content-between">
                     <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="" class="heading footer__heading spacing_2px">CUSTOMER CARE</a>
-                        </li>
+                        <h3 class="heading footer__heading spacing_2px">CUSTOMER CARE</h3>
                         <li class="footer__item--child">
                             <a href="" class="footer__request">Track your order</a>
                         </li>
@@ -303,27 +306,24 @@
                         </li>
                     </ul>
                     <ul class="footer__list footer__list--info">
-                        <li class="footer__item">
-                            <a href="" class="heading footer__heading spacing_2px">LEGAL INFORMATION:</a>
+                        <h3 class="heading footer__heading spacing_2px">LEGAL INFORMATION:</h3>
+
+                        <li class="footer__item--child">
+                            <p class="footer__request footer__request--info ">Company name: De Carlo Nicholas</p>
                         </li>
                         <li class="footer__item--child">
-                            <p href="" class="footer__request footer__request--info ">Company name: De Carlo Nicholas</p>
+                            <p class="footer__request footer__request--info ">VAT number: 07020260480</p>
                         </li>
                         <li class="footer__item--child">
-                            <p href="" class="footer__request footer__request--info ">VAT number: 07020260480</p>
-                        </li>
-                        <li class="footer__item--child">
-                            <p href="" class="footer__request footer__request--info ">REA: FI-674952</p>
+                            <p class="footer__request footer__request--info ">REA: FI-674952</p>
                         </li>
                         <li class="footer__item--child footer__item--w200">
-                            <p href="" class="footer__request footer__request--info ">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                            <p class="footer__request footer__request--info ">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
                         </li>
 
                     </ul>
                     <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="" class="heading footer__heading spacing_2px">LEGAL TERMS:</a>
-                        </li>
+                        <h3 class="heading footer__heading spacing_2px">LEGAL TERMS:</h3>
                         <li class="footer__item--child">
                             <a href="" class="footer__request">Informazioni legali</a>
                         </li>
@@ -338,15 +338,15 @@
                         </li>
                     </ul>
                     <ul class="footer__list order-1">
+                        <h3 class="heading footer__heading spacing_2px">SUBSCRIBE FOR NEWSLETTER</h3>
                         <li class="footer__item">
-                            <a href="" class="heading footer__heading spacing_2px">SUBSCRIBE FOR NEWSLETTER</a>
                             <form action="" class="footer__form">
                                 <input type="text" placeholder="Your Email" class="footer__input">
                                 <a href="" class="footer__button">Subscribe</a>
                             </form>
                         </li>
+                        <h3 class="footer__heading heading spacing_2px">SOCIAL</h3>
                         <li class="footer__item footer__social">
-                            <a href="" class="footer__heading heading spacing_2px">SOCIAL</a>
                             <ul class="list__social d-flex align-item-center">
                                 <li class="list__social--item">
                                     <a href="" class="list__item--links">
@@ -382,7 +382,8 @@
 </body>
 
 </html>
-
+<script src="js/video.js"></script>
+<script src="js/open__box.js"></script>
 <script src="js/jquery-3.6.0.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/base.js"></script>

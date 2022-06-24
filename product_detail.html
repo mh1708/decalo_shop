@@ -38,24 +38,24 @@
                 <div class="header__bottom">
                     <div class="header__container">
                         <div class="header__nav d-flex align-item-center justify-content-between">
-                            <a href="#" class="header__logo">
+                            <a href="index.html" class="header__logo">
                                 <img class="header--img__logo" src="images/logo_black.svg" alt="">
                             </a>
                             <ul class="header__navbar d-flex">
-                                <li class="header__item active">
+                                <li class="header__item">
                                     <a href="index.html" class="header__link spacing_2px">SHOP</a>
                                     <div class="nav--down">
                                         <img src="images/Arrow-down.svg" alt="" class="nav--down__img">
                                     </div>
                                     <ul class="header__subnav">
-                                        <li class="header__item">
-                                            <a href="" class="header__link spacing_2px">T-Shirt</a>
+                                        <li class="header__subnav--item">
+                                            <a href="" class="header__subnav--link spacing_2px">T-Shirt</a>
                                         </li>
-                                        <li class="header__item">
-                                            <a href="" class="header__link spacing_2px">Hat</a>
+                                        <li class="header__subnav--item">
+                                            <a href="" class="header__subnav--link spacing_2px">Hat</a>
                                         </li>
-                                        <li class="header__item pb-sm-0">
-                                            <a href="" class="header__link spacing_2px">Shorts</a>
+                                        <li class="header__subnav--item">
+                                            <a href="" class="header__subnav--link spacing_2px">Shorts</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -69,15 +69,18 @@
                                     <a href="dealer.html" class="header__link spacing_2px">BECOME A DEALER</a>
                                 </li>
                                 <li class="header__item">
+                                    <a href="FAQ.html" class="header__link spacing_2px">FAQ</a>
+                                </li>
+                                <li class="header__item">
                                     <a href="contact.html" class="header__link spacing_2px">CONTACT</a>
                                 </li>
                             </ul>
                             <ul class="header__operate d-flex">
                                 <li class="header__manupication header__manupication--search">
-                                    <a href="" class="header__links">
+                                    <a class="header__links">
                                         <img src="images/search.svg" alt="" class="header__icon header__icon--search">
                                     </a>
-                                    <div class="search__box">
+                                    <div class="search__box box">
                                         <form method="GET">
                                             <input type="text" placeholder="Search for product..." class="search__text">
                                             <div class="type__select">
@@ -93,13 +96,12 @@
                                         </form>
                                     </div>
                                 </li>
-                                <li class="header__manupication header__favor--hover">
-                                    <a href="" class="header__links">
+                                <li class="header__manupication header__favor--click">
+                                    <a class="header__links">
                                         <img src="images/loves.svg" alt="" class="header__icon">
-
                                     </a>
-                                    <ul class="header__favor">
-                                        <li class="header__favor--list">
+                                    <ul class="header__favor box">
+                                        <li class="header__favor--list ">
                                             <img src="images/ring.jpg" alt="" class="header__favor--img">
                                             <div class="header__favor--info">
                                                 <div class="header__favor--head d-flex align-item-center justify-content-between">
@@ -154,10 +156,10 @@
                                     </ul>
                                 </li>
                                 <li class="header__manupication header__user--hover">
-                                    <a href="" class="header__links">
+                                    <a class="header__links">
                                         <img src="images/user.svg" alt="" class="header__icon">
                                     </a>
-                                    <ul class="header__user">
+                                    <ul class="header__user box">
                                         <li class="header__user--list">
                                             <a href="" class="header__user--link">My Account</a>
                                         </li>
@@ -216,11 +218,13 @@
                                         </div>
                                     </div>
                                     <div class="item">
-                                        <div class="product__thumb">
+                                        <div class="product__thumb discover-vid">
                                             <img src="images/product_4.jpg" alt="" class="product__img">
                                             <button class="btn btn__play">
                                                 <img class="btn__images"  src="images/play.svg" alt="">
                                             </button>
+                                            <video controls class="control-video" src="video/video-ad.mp4"></video>
+
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +244,7 @@
                                     </div>
                                 </div>
                                 <div class="select__wrapper select__wrapper--size">
-                                    <select id="title" name="province" class="form__select form__select--size  spacing_2px">
+                                    <select id="title" name="province" class="form__select form__nav--none spacing_2px">
                                         <option value="50"> 50</option>
                                         <option value="60"> 60</option>
                                         <option value="70"> 70</option>
@@ -328,11 +332,11 @@
                                             <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
                                             <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                         </div>
-                                        <div class="service__button d-flex align-item-center justify-content-center">
-                                            <a href="" class="btn btn__more btn--bg-tranparent spacing_2px">READ MORE</a>
-                                            <div class="service__next">
-                                                <img src="images/next_black.svg" alt="">
-                                            </div>
+                                        <div class="service__button">
+                                            <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                                <span>READ MORE</span>
+
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -345,11 +349,11 @@
                                             <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
                                             <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                         </div>
-                                        <div class="service__button d-flex align-item-center justify-content-center">
-                                            <a href="" class="btn btn__more btn--bg-tranparent spacing_2px">READ MORE</a>
-                                            <div class="service__next">
-                                                <img src="images/next_black.svg" alt="">
-                                            </div>
+                                        <div class="service__button">
+                                            <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                                <span>READ MORE</span>
+
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -362,11 +366,11 @@
                                             <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
                                             <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                         </div>
-                                        <div class="service__button d-flex align-item-center justify-content-center">
-                                            <a href="" class="btn btn__more btn--bg-tranparent spacing_2px">READ MORE</a>
-                                            <div class="service__next">
-                                                <img src="images/next_black.svg" alt="">
-                                            </div>
+                                        <div class="service__button">
+                                            <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                                <span>READ MORE</span>
+
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -379,11 +383,11 @@
                                             <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
                                             <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                         </div>
-                                        <div class="service__button d-flex align-item-center justify-content-center">
-                                            <a href="" class="btn btn__more btn--bg-tranparent spacing_2px">READ MORE</a>
-                                            <div class="service__next">
-                                                <img src="images/next_black.svg" alt="">
-                                            </div>
+                                        <div class="service__button">
+                                            <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                                <span>READ MORE</span>
+
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -571,70 +575,70 @@
                 <h3 class="heading service__heading spacing_2px text-center">OUR SERVICES</h3>
                 <div class="service__list d-flex align-item-center justify-content-between row ">
                     <div class="service__item col-3 ">
-                        <div class="service__thumb ">
-                            <div class="service__images ">
-                                <img src="images/box.svg " alt=" ">
+                        <div class="service__thumb">
+                            <div class="service__images">
+                                <img src="images/box.svg" alt="">
                             </div>
-                            <div class="service__info ">
-                                <h3 class="heading service__name spacing_2px ">FREE SHIPPING IN ITALY</h3>
-                                <p class="description service__description ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <div class="service__info">
+                                <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
+                                <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                             </div>
-                            <div class="service__button d-flex align-item-center justify-content-center ">
-                                <a href=" " class="btn btn__more btn--bg-tranparent spacing_2px ">READ MORE</a>
-                                <div class="service__next ">
-                                    <img src="images/next_black.svg " alt=" ">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service__item col-3 ">
-                        <div class="service__thumb ">
-                            <div class="service__images ">
-                                <img src="images/box.svg " alt=" ">
-                            </div>
-                            <div class="service__info ">
-                                <h3 class="heading service__name spacing_2px ">FREE SHIPPING IN ITALY</h3>
-                                <p class="description service__description ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                            </div>
-                            <div class="service__button d-flex align-item-center justify-content-center ">
-                                <a href=" " class="btn btn__more btn--bg-tranparent spacing_2px ">READ MORE</a>
-                                <div class="service__next ">
-                                    <img src="images/next_black.svg " alt=" ">
-                                </div>
+                            <div class="service__button">
+                                <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                    <span>READ MORE</span>
+
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="service__item col-3 ">
-                        <div class="service__thumb ">
-                            <div class="service__images ">
-                                <img src="images/box.svg " alt=" ">
+                        <div class="service__thumb">
+                            <div class="service__images">
+                                <img src="images/box.svg" alt="">
                             </div>
-                            <div class="service__info ">
-                                <h3 class="heading service__name spacing_2px ">FREE SHIPPING IN ITALY</h3>
-                                <p class="description service__description ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <div class="service__info">
+                                <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
+                                <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                             </div>
-                            <div class="service__button d-flex align-item-center justify-content-center ">
-                                <a href=" " class="btn btn__more btn--bg-tranparent spacing_2px ">READ MORE</a>
-                                <div class="service__next ">
-                                    <img src="images/next_black.svg " alt=" ">
-                                </div>
+                            <div class="service__button">
+                                <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                    <span>READ MORE</span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__item col-3 ">
+                        <div class="service__thumb">
+                            <div class="service__images">
+                                <img src="images/box.svg" alt="">
+                            </div>
+                            <div class="service__info">
+                                <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
+                                <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                            <div class="service__button">
+                                <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                    <span>READ MORE</span>
+
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="service__item col-3 mb-sm-40 ">
-                        <div class="service__thumb ">
-                            <div class="service__images ">
-                                <img src="images/box.svg " alt=" ">
+                        <div class="service__thumb">
+                            <div class="service__images">
+                                <img src="images/box.svg" alt="">
                             </div>
-                            <div class="service__info ">
-                                <h3 class="heading service__name spacing_2px ">FREE SHIPPING IN ITALY</h3>
-                                <p class="description service__description ">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <div class="service__info">
+                                <h3 class="heading  service__name spacing_2px">FREE SHIPPING IN ITALY</h3>
+                                <p class="description service__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                             </div>
-                            <div class="service__button d-flex align-item-center justify-content-center ">
-                                <a href=" " class="btn btn__more btn--bg-tranparent spacing_2px ">READ MORE</a>
-                                <div class="service__next ">
-                                    <img src="images/next_black.svg " alt=" ">
-                                </div>
+                            <div class="service__button">
+                                <a href="" class="btn btn__more btn__more--black btn--bg-tranparent spacing_2px">
+                                    <span>READ MORE</span>
+
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -643,95 +647,90 @@
             </div>
         </div>
         <!-- end service -->
-        <div class="footer ">
-            <div class="container ">
-                <div class="footer__logo ">
-                    <img src="images/logo_white.svg " alt=" " class="footer__logo--item ">
+        <div class="footer">
+            <div class="container">
+                <div class="footer__logo">
+                    <img src="images/logo_white.svg" alt="" class="footer__logo--item">
                 </div>
-                <div class="footer__nav d-flex justify-content-between ">
-                    <ul class="footer__list ">
-                        <li class="footer__item ">
-                            <a href=" " class="heading footer__heading spacing_2px ">CUSTOMER CARE</a>
+                <div class="footer__nav d-flex  justify-content-between">
+                    <ul class="footer__list">
+                        <h3 class="heading footer__heading spacing_2px">CUSTOMER CARE</h3>
+                        <li class="footer__item--child">
+                            <a href="" class="footer__request">Track your order</a>
                         </li>
-                        <li class="footer__item--child ">
-                            <a href=" " class="footer__request ">Track your order</a>
-                        </li>
-                        <li class="footer__item--child ">
-                            <a href=" " class="footer__request ">Frequent Question</a>
+                        <li class="footer__item--child">
+                            <a href="" class="footer__request">Frequent Question</a>
                         </li>
                     </ul>
-                    <ul class="footer__list footer__list--info ">
-                        <li class="footer__item ">
-                            <a href=" " class="heading footer__heading spacing_2px ">LEGAL INFORMATION:</a>
+                    <ul class="footer__list footer__list--info">
+                        <h3 class="heading footer__heading spacing_2px">LEGAL INFORMATION:</h3>
+
+                        <li class="footer__item--child">
+                            <p class="footer__request footer__request--info ">Company name: De Carlo Nicholas</p>
                         </li>
-                        <li class="footer__item--child ">
-                            <p href=" " class="footer__request footer__request--info ">Company name: De Carlo Nicholas</p>
+                        <li class="footer__item--child">
+                            <p class="footer__request footer__request--info ">VAT number: 07020260480</p>
                         </li>
-                        <li class="footer__item--child ">
-                            <p href=" " class="footer__request footer__request--info ">VAT number: 07020260480</p>
+                        <li class="footer__item--child">
+                            <p class="footer__request footer__request--info ">REA: FI-674952</p>
                         </li>
-                        <li class="footer__item--child ">
-                            <p href=" " class="footer__request footer__request--info ">REA: FI-674952</p>
-                        </li>
-                        <li class="footer__item--child footer__item--w200 ">
-                            <p href=" " class="footer__request footer__request--info ">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                        <li class="footer__item--child footer__item--w200">
+                            <p class="footer__request footer__request--info ">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
                         </li>
 
                     </ul>
-                    <ul class="footer__list ">
-                        <li class="footer__item ">
-                            <a href=" " class="heading footer__heading spacing_2px ">LEGAL TERMS:</a>
+                    <ul class="footer__list">
+                        <h3 class="heading footer__heading spacing_2px">LEGAL TERMS:</h3>
+                        <li class="footer__item--child">
+                            <a href="" class="footer__request">Informazioni legali</a>
                         </li>
-                        <li class="footer__item--child ">
-                            <a href=" " class="footer__request ">Informazioni legali</a>
+                        <li class="footer__item--child">
+                            <a href="" class="footer__request footer__item--w200">Condizioni generali di vendita</a>
                         </li>
-                        <li class="footer__item--child ">
-                            <a href=" " class="footer__request footer__item--w200 ">Condizioni generali di vendita</a>
+                        <li class="footer__item--child">
+                            <a href="" class="footer__request">Informativa sulla privacy</a>
                         </li>
-                        <li class="footer__item--child ">
-                            <a href=" " class="footer__request ">Informativa sulla privacy</a>
-                        </li>
-                        <li class="footer__item--child ">
-                            <a href=" " class="footer__request ">Cookie policy</a>
+                        <li class="footer__item--child">
+                            <a href="" class="footer__request">Cookie policy</a>
                         </li>
                     </ul>
-                    <ul class="footer__list order-1 ">
-                        <li class="footer__item ">
-                            <a href=" " class="heading footer__heading spacing_2px ">SUBSCRIBE FOR NEWSLETTER</a>
-                            <form action=" " class="footer__form ">
-                                <input type="text " placeholder="Your Email " class="footer__input ">
-                                <a href=" " class="footer__button ">Subscribe</a>
+                    <ul class="footer__list order-1">
+                        <h3 class="heading footer__heading spacing_2px">SUBSCRIBE FOR NEWSLETTER</h3>
+                        <li class="footer__item">
+                            <form action="" class="footer__form">
+                                <input type="text" placeholder="Your Email" class="footer__input">
+                                <a href="" class="footer__button">Subscribe</a>
                             </form>
                         </li>
-                        <li class="footer__item footer__social ">
-                            <a href=" " class="footer__heading heading spacing_2px ">SOCIAL</a>
-                            <ul class="list__social d-flex align-item-center ">
-                                <li class="list__social--item ">
-                                    <a href=" " class="list__item--links ">
-                                        <img src="images/facebook.svg " alt=" " class="list__item--links ">
+                        <h3 class="footer__heading heading spacing_2px">SOCIAL</h3>
+                        <li class="footer__item footer__social">
+                            <ul class="list__social d-flex align-item-center">
+                                <li class="list__social--item">
+                                    <a href="" class="list__item--links">
+                                        <img src="images/facebook.svg" alt="" class="list__item--links">
                                     </a>
                                 </li>
-                                <li class="list__social--item ">
-                                    <a href=" " class="list__item--links ">
-                                        <img src="images/instagram.svg " alt=" " class="list__item--links ">
+                                <li class="list__social--item">
+                                    <a href="" class="list__item--links">
+                                        <img src="images/instagram.svg" alt="" class="list__item--links">
                                     </a>
                                 </li>
-                                <li class="list__social--item ">
-                                    <a href=" " class="list__item--links ">
-                                        <img src="images/linkedin.svg " alt=" " class="list__item--links ">
+                                <li class="list__social--item">
+                                    <a href="" class="list__item--links">
+                                        <img src="images/linkedin.svg" alt="" class="list__item--links">
                                     </a>
                                 </li>
-                                <li class="list__social--item ">
-                                    <a href=" " class="list__item--links ">
-                                        <img src="images/youtube.svg " alt=" " class="list__item--links ">
+                                <li class="list__social--item">
+                                    <a href="" class="list__item--links">
+                                        <img src="images/youtube.svg" alt="" class="list__item--links">
                                     </a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </div>
-                <div class="footer__copyright ">
-                    <p class="footer__copyright--text ">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                <div class="footer__copyright">
+                    <p class="footer__copyright--text">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
                 </div>
             </div>
         </div>
@@ -739,7 +738,9 @@
     </div>
     </div>
 </body>
-<script src="js/jquery-3.6.0.js "></script>
-<script src="js/owl.carousel.min.js "></script>
-<script src="js/base.js "></script>
-<script src="js/app.js "></script>
+<script src="js/video.js"></script>
+<script src="js/open__box.js"></script>
+<script src="js/jquery-3.6.0.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/app.js"></script>

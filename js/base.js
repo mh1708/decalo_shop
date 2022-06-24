@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 
+
     navbar__toggle.addEventListener("click", function() {
         header__nav.classList.toggle("active");
 
@@ -26,10 +27,8 @@ window.addEventListener("DOMContentLoaded", function() {
     });
     narrow_down.addEventListener("click", function() {
         this.classList.toggle("turn_up");
-        sub_nav.classList.toggle("active");
-    })
-
-
+        sub_nav.classList.toggle("active")
+    });
     // accordion
     var acc = document.getElementsByClassName("faq__button");
     for (let i = 0; i < acc.length; i++) {
@@ -88,6 +87,12 @@ window.addEventListener("DOMContentLoaded", function() {
     plus.addEventListener("click", function() {
         quantity++;
         number.value = quantity;
-    });
+    })
+
+
+
+
+
+
 
 }, false);
