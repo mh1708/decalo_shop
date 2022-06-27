@@ -49,6 +49,7 @@
 .header__option {
     color: white;
     background: var(--primary-color);
+    -webkit-text-fill-color: white;
 }
 
 .header__nav {
@@ -324,6 +325,15 @@
     transform: translateY(-50%);
 }
 
+.colection__images {
+    background: url(../images/coletion.jpg) no-repeat;
+    background-position: center center;
+    min-height: 522px;
+    background-size: 100%;
+}
+
+.colection__images.colection--height-300 {}
+
 .colection__heading {
     font-weight: 600;
     color: rgb(255, 255, 255) !important;
@@ -581,7 +591,7 @@
 }
 
 .picture--bg-about {
-    height: 519px;
+    min-height: 519px;
     background: url(../images/about_conlection.jpg);
     background-size: cover;
     background-repeat: no-repeat;

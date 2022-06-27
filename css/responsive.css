@@ -33,28 +33,25 @@
             display: block;
             cursor: pointer;
         }
-        .header__bottom .header__navbar {
-            display: block;
-        }
         .header__bottom .header__nav {
             padding: 10px 15px;
             z-index: 99;
             background: white;
         }
         .header__bottom .header__navbar {
-            top: 94px;
+            top: 92px;
             position: absolute;
             background: white;
             z-index: 99;
             width: 100%;
-            opacity: 0;
             left: 10px;
-            visibility: hidden;
+            height: 0px;
             transition: all 0.5s ease-in-out;
+            overflow: hidden;
         }
         .header__bottom .header__navbar.active {
-            opacity: 1;
-            visibility: visible;
+            height: 400px;
+            transition: all 0.5s ease-in-out;
         }
         .header__navbar .header__item {
             padding: 20px 50px;
@@ -374,11 +371,6 @@
         .reason__thumb {
             height: 322px;
         }
-        .header__bottom .header__navbar.active {
-            opacity: 1;
-            visibility: visible;
-            top: 95px;
-        }
         .form__group {
             flex: 0 0 100%;
             max-width: 100%;
@@ -456,6 +448,9 @@
     @media screen and (max-width: 540px) {
         .faq__button::before {
             top: 25px;
+        }
+        .header__bottom .header__navbar {
+            top: 65px;
         }
         .faq__item {
             width: 100%;
@@ -558,10 +553,11 @@
         .story__images {
             height: 345px;
         }
-        .colection--height-300 {
-            height: 300px;
+        .colection__images {
             background: url(../images/index__banner.jpg) no-repeat;
-            background-position: top right;
+            background-position: center center;
+            min-height: 300px;
+            background-size: 100%;
         }
         .colection__text--w100 {
             width: 100%;
@@ -628,11 +624,6 @@
         .faq__links.active {
             padding: 10px 0;
         }
-        .header__bottom .header__navbar.active {
-            opacity: 1;
-            visibility: visible;
-            top: 65px;
-        }
         .product__filter {
             margin-left: 65px;
         }
@@ -641,6 +632,12 @@
         }
         .banner__images img {
             object-fit: cover;
+        }
+        .header__bottom .header__navbar.active {
+            height: 350px;
+        }
+        .faq .container {
+            padding: 0 7.5px;
         }
     }
     /*Tablet nhỏ(480 x 640)*/

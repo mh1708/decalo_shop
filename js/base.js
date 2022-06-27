@@ -8,20 +8,30 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 
-
+    // close-open menu mobile 
     navbar__toggle.addEventListener("click", function() {
-        header__nav.classList.toggle("active");
 
         if (toggle__img.className != "cancel") {
             toggle__img.src = "images/cancel_1.svg";
             toggle__img.className = "cancel";
             overlay.classList.add("active");
+            header__nav.classList.add("active");
+
+            header__nav.style.transition = 'all 0.5s ease';
+            header__nav.style.display = "block";
+
 
 
         } else if (toggle__img.className == "cancel") {
             toggle__img.src = "images/menu_2.svg";
             toggle__img.className = "menu";
+
             overlay.classList.remove("active");
+            header__nav.classList.remove("active");
+            header__nav.style.display = "none";
+
+
+
         }
 
     });
